@@ -1,15 +1,3 @@
-def decoder(password):
-    decoded_password = []
-    for i in range(len(password)):
-        # change to int type
-        integer = int(password[i])
-        # add 3
-        integer -= 3
-        # append to a new list
-        decoded_password.append(integer)
-    return decoded_password
-
-
 def encoder(password):
     encoded_password = []
     # get each # separately
