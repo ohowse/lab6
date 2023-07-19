@@ -1,3 +1,4 @@
+# Olivia Howse
 def encoder(password):
     encoded_password = []
     # get each # separately
