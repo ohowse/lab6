@@ -11,6 +11,19 @@ def encoder(password):
         encoded_password.append(integer)
     return encoded_password
 
+# Ivy Li
+def decoder(encoded_password):
+    decoded_password = []
+    # get each number separately
+    for i in range(len(encoded_password)):
+        # subtract 3
+        integer = encoded_password[i] - 3
+        # change to string type
+        char = str(integer)
+        # append to a new list
+        decoded_password.append(char)
+    return "".join(decoded_password)
+
 
 def print_list(array):
     for i in array:
